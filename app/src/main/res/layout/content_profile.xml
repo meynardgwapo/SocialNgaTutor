@@ -23,27 +23,99 @@
                 android:layout_marginTop="-40dp"
                 android:src="@drawable/banner1"/>
             <ImageButton
-                android:layout_width="173dp"
-                android:layout_height="173dp"
-                android:src="@drawable/ppdefault"
-                android:layout_marginTop="-240dp"
+                android:layout_width="95dp"
+                android:layout_height="95dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/chieni"
+                android:layout_marginTop="-245dp"
                 android:layout_gravity="center"
                 android:elevation="4dp"/>
             <TextView
                 android:id="@+id/profile_fullname"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Full name"
-                android:layout_marginTop="38dp"
+                android:text="Meynard Inso"
+                android:textColor="#FFFFFF"
+                android:layout_marginTop="20dp"
                 android:textSize="23sp"
                 android:layout_gravity="center"/>
             <TextView
                 android:id="@+id/profile_username"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="\@username"
+                android:text="\@meynardgwapo"
+                android:textColor="#FFFFFF"
                 android:layout_gravity="center"/>
+
+
+            <Button
+                android:id="@+id/profile_btnFollow"
+                android:layout_width="80dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:text="Follow"
+                android:textColor="#FFFFFF"
+                android:background="@color/color_primary_blue"/>
+            <Button
+                android:id="@+id/profile_btnEdit"
+                android:layout_width="20dp"
+                android:layout_height="15dp"
+                android:layout_marginTop="-20dp"
+                android:layout_marginLeft="60dp"
+                android:layout_gravity="center"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/ic_check_circle"/>
+
+            <TextView
+                android:id="@+id/profile_followers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1,202 followers"
+                android:textColor="#989898"
+                android:layout_marginTop="35dp"
+                android:layout_marginLeft="50dp"
+                android:textSize="16sp"
+                android:layout_gravity="left"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="|"
+                android:textColor="#A0A0A0"
+                android:layout_marginTop="-30dp"
+                android:layout_marginLeft="-1dp"
+                android:textSize="27sp"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/profile_followings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1,120 following"
+                android:textColor="#989898"
+                android:layout_marginTop="-22dp"
+                android:layout_marginLeft="93dp"
+                android:textSize="16sp"
+                android:layout_gravity="center"/>
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="33dp"
+                android:text="                             POST"
+                android:textColor="#000000"
+                android:layout_marginTop="20dp"
+                android:background="#F0F0F0"
+                android:textSize="23sp"
+                android:layout_gravity="center"/>
+
+
+
+
         </LinearLayout>
+
+
+
     </ScrollView>
 
 </RelativeLayout>
+

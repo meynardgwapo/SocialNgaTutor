@@ -22,6 +22,7 @@
                 android:layout_height="200dp"
                 android:layout_gravity="center"
                 android:src="@drawable/ppdefault"
+                android:layout_marginTop="10dp"
                 android:contentDescription="Press to Upload Picture"/>
             <EditText
                 android:id="@+id/s_username"

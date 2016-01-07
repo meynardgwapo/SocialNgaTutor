@@ -73,8 +73,8 @@
             android:layout_gravity="center"
             android:text="@string/Signup"
             android:onClick="mainButtons"
-            android:textColor="@color/color_primary_blue_dark"
-            android:background="@color/bgGrey"/>
+            android:textColor="#FFFFFF"
+            android:background="#00CCCC"/>
 
     </LinearLayout>
 
