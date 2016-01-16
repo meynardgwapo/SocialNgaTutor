@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:layout_width="0"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:layout_gravity="left"
+            android:background="@color/white"
+            android:src="@drawable/ic_close"/>
+        <TextView
+            android:layout_width="0"
+            android:layout_height="fill_parent"
+            android:layout_weight="3"/>
+        <Button
+            android:layout_width="0"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:text="Post"
+            android:textSize="20sp"
+            android:textColor="#3399FF"
+            android:background="@color/white"
+            android:layout_gravity="right"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="510dp"
+        android:background="#F0F0F0"
+        android:layout_marginTop="60dp">
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="435dp"
+            android:text="  What's on your mind?"
+            android:gravity="top"
+            android:textSize="23sp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/postfield"
+            android:textColor="@color/lightgrey">
+            </EditText>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="525dp">
+
+        <ImageButton
+            android:id="@+id/p_files"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="fill_parent"
+            android:background="@drawable/postbuttonbg"
+            android:src="@drawable/ic_attach_file"/>
+        <ImageButton
+            android:id="@+id/p_tag"
+            android:src="@drawable/ic_tag_faces"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:background="@drawable/postbuttonbg"/>
+        <ImageButton
+            android:id="@+id/p_pictures"
+            android:src="@drawable/ic_filter"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:background="@drawable/postbuttonbg"/>
+        <ImageButton
+
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="2"
+            android:layout_gravity="center"
+            android:background="@drawable/postbuttonbg"
+            android:text="Share"/>
+    </LinearLayout>
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

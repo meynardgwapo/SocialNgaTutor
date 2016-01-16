@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="3dp"
+    android:layout_marginLeft="3dp"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="370dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        card_view:cardCornerRadius="4dp">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="70dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:id="@+id/n_ppname"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:gravity="left"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/cassandra"/>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:layout_marginLeft="8dp">
+
+                <TextView
+                    android:id="@+id/n_username"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="Cassandra Yu"
+                    android:gravity="left"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:id="@+id/n_description"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp"
+                    android:text="Cassandra Yu liked your photo. "
+                    android:gravity="left"
+                    android:textColor="@color/lightgrey"/>
+                <TextView
+                    android:id="@+id/n_time"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="3 hours ago"
+                    android:textSize="12sp"
+                    android:gravity="right"
+                    android:textColor="@color/lightgrey"/>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+
+
+</RelativeLayout>

@@ -89,6 +89,7 @@ public class LoginProcessActivity extends AppCompatActivity {
                 loading1.setVisibility(View.INVISIBLE);
                 balhin();
             }
+            balhin();
         }
     }
 }
