@@ -4,6 +4,7 @@
     xmlns:fresco="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+
     
     <LinearLayout
         android:layout_width="fill_parent"
@@ -27,11 +28,15 @@
             android:layout_weight="1"
             android:text="Post"
             android:textSize="20sp"
-            android:textColor="#3399FF"
-            android:background="@color/white"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/bluelatest"
             android:layout_gravity="right"/>
 
     </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="510dp"
@@ -50,52 +55,45 @@
             android:textColor="@color/lightgrey">
             </EditText>
     </LinearLayout>
+    </ScrollView>
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="45dp"
         android:orientation="horizontal"
         android:layout_marginTop="525dp">
 
-        <ImageButton
+        <Button
             android:id="@+id/p_files"
+            android:textColor="@color/graylang"
             android:layout_width="0dp"
-            android:layout_weight="1"
+            android:layout_weight="2"
             android:layout_height="fill_parent"
+            android:text="Files"
             android:background="@drawable/postbuttonbg"
-            android:src="@drawable/ic_attach_file"/>
-        <ImageButton
+            android:drawableLeft="@drawable/ic_attach_file"/>
+        <Button
             android:id="@+id/p_tag"
-            android:src="@drawable/ic_tag_faces"
+            android:textColor="@color/graylang"
+            android:drawableLeft="@drawable/ic_tag_faces"
             android:layout_width="0dp"
-            android:layout_height="fill_parent"
-            android:layout_weight="1"
-            android:layout_gravity="center"
-            android:background="@drawable/postbuttonbg"/>
-        <ImageButton
-            android:id="@+id/p_pictures"
-            android:src="@drawable/ic_filter"
-            android:layout_width="0dp"
-            android:layout_height="fill_parent"
-            android:layout_weight="1"
-            android:layout_gravity="center"
-            android:background="@drawable/postbuttonbg"/>
-        <ImageButton
-
-            android:layout_width="0dp"
+            android:text="Tag"
             android:layout_height="fill_parent"
             android:layout_weight="2"
             android:layout_gravity="center"
-            android:background="@drawable/postbuttonbg"
-            android:text="Share"/>
+            android:background="@drawable/postbuttonbg"/>
+        <Button
+            android:id="@+id/p_pictures"
+            android:textColor="@color/graylang"
+            android:drawableLeft="@drawable/ic_crop_original"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:text="Photos"
+            android:layout_weight="2"
+            android:layout_gravity="center"
+            android:background="@drawable/postbuttonbg"/>
+
     </LinearLayout>
 
-    <ProgressBar
-        style="?android:attr/progressBarStyleLarge"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/progressBar"
-        android:layout_centerVertical="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+
 
 </RelativeLayout>
